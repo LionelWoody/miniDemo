@@ -30,8 +30,8 @@ public class WelcomeController {
     public String welcome(Map<String, Object> model, HttpServletRequest request) {
         model.put("time", new Date());
         model.put("message", userRepository.findOne(1L));
-        request.setAttribute("message.request", userRepository.findOne(1L));
-        request.getSession().setAttribute("message.session", userRepository.findOne(1L));
+        request.setAttribute("messageInRequest", userRepository.findOne(1L));
+        request.getSession().setAttribute("messageInSession", userRepository.findOne(1L));
         model.put("tests", Arrays.asList("abc,def,ghi,jkl,mno,stu,vwx,yz".split(",")));
         return "welcome";
     }
