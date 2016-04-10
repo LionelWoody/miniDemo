@@ -16,9 +16,9 @@
 	</div>
 	Date: ${time.date}<br/>
 	Time: ${time.time}<br/>
-	ModelMessage: ${message}<br/>
-	RequestMessage: ${messageRequest}<br/>
-	SessionMessage: ${messageSession}<br/>
+	message: ${message}<br/>
+	messageInRequest: ${messageInRequest}<br/>
+	messageInSession: ${messageInSession}<br/>
 	#foreach($t in $tests)
 		$t<br/>
 	#end
