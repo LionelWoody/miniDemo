@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User List</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li><a href="/"> Home </a></li>
+				<li><a href="/logout"> Logout </a></li>
+			</ul>
+		</div>
+	</div>
+	<h3>总共 $!{users.getTotalPages()} 页，总共 $!{users.getTotalElements()} 个用户</h3>
+	#foreach($user in $users)
+		${user} <br/>
+	#end
+	<div class="navbar" id="footer">
+		<div class="navbar-inner">
+			Default footer.
+		</div>
+	</div>
+</div>
+</body>
+</html>

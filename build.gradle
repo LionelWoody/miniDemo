@@ -44,8 +44,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-redis')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
-    compile "org.woodylab.boot:spring-boot-starter-pebble:${versions.pebble}"
-//    compile('org.springframework.boot:spring-boot-starter-velocity')
+//    compile "org.woodylab.boot:spring-boot-starter-pebble:${versions.pebble}"
+    compile('org.springframework.boot:spring-boot-starter-velocity')
 
     optional("org.springframework.boot:spring-boot-configuration-processor")
     optional("org.springframework.boot:spring-boot-devtools")
